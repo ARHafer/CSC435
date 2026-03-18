@@ -1,0 +1,29 @@
+# Tomcat Internals
+/tomcat/bin/
+/tomcat/conf/
+/tomcat/lib/
+/tomcat/logs/
+/tomcat/temp/
+/tomcat/work/
+/tomcat/BUILDING.txt
+/tomcat/CONTRIBUTING.md
+/tomcat/LICENSE
+/tomcat/NOTICE
+/tomcat/README.md
+/tomcat/RELEASE-NOTES
+/tomcat/RUNNING.txt
+/tomcat/webapps/docs/
+/tomcat/webapps/examples/
+/tomcat/webapps/host-manager/
+/tomcat/webapps/manager/
+/tomcat/webapps/ROOT/
+
+# Compiled Class Files
+/tomcat/webapps/zeldle/WEB-INF/classes/
+
+# Dependency Jars
+/tomcat/webapps/zeldle/WEB-INF/lib/
+
+# Other Crap
+/.vscode
+Command List.txt
