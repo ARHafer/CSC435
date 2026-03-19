@@ -15,9 +15,9 @@ public class ChooseItemServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         try {
-            Item chosenItem = DatabaseHandler.getRandomItem();
+            Item targetItem = DatabaseHandler.getRandomItem();
 
-            if (chosenItem == null) {
+            if (targetItem == null) {
                 response.setStatus(500);
                 out.print("{\"error\": \"Database is empty!\"}");
                 return;
@@ -25,7 +25,7 @@ public class ChooseItemServlet extends HttpServlet {
 
             HttpSession session = request.getSession(true);
 
-            session.setAttribute("chosenItem", chosenItem);
+            session.setAttribute("targetItem", targetItem);
             session.setAttribute("guessesRemaining", MAX_GUESSES);
 
             response.setStatus(200);
