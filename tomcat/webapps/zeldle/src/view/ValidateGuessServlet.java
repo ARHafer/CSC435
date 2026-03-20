@@ -1,9 +1,14 @@
+package view;
+
 import java.io.*;
 import java.sql.*;
 
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
+
+import model.Item;
+import data.DatabaseHandler;
 
 @WebServlet("/validateGuess")
 public class ValidateGuessServlet extends HttpServlet {
@@ -33,8 +38,9 @@ public class ValidateGuessServlet extends HttpServlet {
                     "\"item\": {" +
                     "\"id\": " + item.getID() + ", " +
                     "\"name\": " + item.getName() + ", " +
-                    "\"category\": " + item.getCategory() + ", " +
-                    "\"type\": " + item.getType() + ", " +
+                    "\"classification\": " + item.getClassification() + ", " +
+                    "\"pType\": " + item.getPType() + ", " +
+                    "\"sType\": " + item.getSType() + ", " +
                     "\"location\": " + item.getLocation() + ", " +
                     "\"game\": " + item.getGame() + ", " +
                     "\"value\": " + item.getValue() + 
